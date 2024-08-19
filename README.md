@@ -35,7 +35,16 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Ejecutar el código
+### 4. Variables de entorno
+
+#### hacer una copia del archivo .env.example con nombre .env
+```bash
+cp .env.example .env
+```
+
+#### modificar los valores de las variables de entorno
+
+### 5. Ejecutar el código
 ```bash
 python manage.py runserver
 ```
