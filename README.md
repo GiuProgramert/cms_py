@@ -49,3 +49,8 @@ cp .env.example .env
 ```bash
 python manage.py runserver
 ```
+
+### Documentación
+```
+python pydoc.py -p 1234
+```
