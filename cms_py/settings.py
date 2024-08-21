@@ -82,8 +82,12 @@ WSGI_APPLICATION = "cms_py.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        'NAME': os.environ.get('DB_NAME', 'cms_py'),
+        'USER': os.environ.get('DB_USER', 'user'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),  # o la dirección IP del servidor de la base de datos
+        'PORT': os.environ.get('DB_PORT', '5432'),  
     }
 }
 

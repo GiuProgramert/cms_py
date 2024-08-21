@@ -4,6 +4,7 @@ Proyecto realizado en la matería Ingenieria de Software 2 permite subir conteni
 
 ## Requerimientos
 - Python 3.10.*
+- postgresql
 
 ## Instalación
 
