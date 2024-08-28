@@ -41,10 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
     # Custom apps
-    'user',
-    'main_site'
+    "user",
+    "main_site",
 ]
 
 MIDDLEWARE = [
@@ -61,15 +60,15 @@ ROOT_URLCONF = "cms_py.urls"
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [BASE_DIR / "templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
             ],
         },
     },
@@ -85,11 +84,13 @@ WSGI_APPLICATION = "cms_py.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': os.environ.get('DB_NAME', 'cms_py'),
-        'USER': os.environ.get('DB_USER', 'user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),  # o la dirección IP del servidor de la base de datos
-        'PORT': os.environ.get('DB_PORT', '5432'),  
+        "NAME": os.environ.get("DB_NAME", "cms_py"),
+        "USER": os.environ.get("DB_USER", "user"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", ""),
+        "HOST": os.environ.get(
+            "DB_HOST", "localhost"
+        ),  # o la dirección IP del servidor de la base de datos
+        "PORT": os.environ.get("DB_PORT", "5432"),
     }
 }
 
