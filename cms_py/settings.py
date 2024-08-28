@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # Custom apps
     'user',
+    'main_site'
 ]
 
 MIDDLEWARE = [
