@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the CMS</h1>
+    
+    <h2>Featured Content</h2>
+    <ul>
+        {% for content in featured_content %}
+            <li>{{ content.title }}: {{ content.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Recent Articles</h2>
+    <ul>
+        {% for article in recent_articles %}
+            <li>{{ article.title }} - {{ article.published_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
